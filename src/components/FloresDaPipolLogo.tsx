@@ -1,5 +1,5 @@
 import React from 'react';
-import logoFloresDaPipol from '../assets/images/logo_flores_da_pipol_1791419375972.jpg';
+import logoFloresDaPipol from '../assets/images/logo-flores-da-pipol.png';
 
 interface FloresDaPipolLogoProps {
   size?: 'sm' | 'md' | 'lg';
@@ -34,24 +34,21 @@ export const FloresDaPipolLogo: React.FC<FloresDaPipolLogoProps> = ({
 
   return (
     <div className={`flex items-center gap-2 sm:gap-3 ${className}`}>
-      <div className={`${sizeClass} shrink-0 overflow-hidden rounded-full`}>
-        {/* The source image has wide white margins around the circular badge; scaling crops them out. */}
-        <img
-          src={logoFloresDaPipol}
-          alt={withName ? '' : 'Flores da Pipol'}
-          className="h-full w-full object-contain scale-[1.28] mix-blend-multiply"
-        />
-      </div>
+      <img
+        src={logoFloresDaPipol}
+        alt={withName ? '' : 'Flores da Pipol'}
+        className={`${sizeClass} shrink-0 object-contain drop-shadow-sm`}
+      />
 
       {withName && (
         <div className="flex flex-col leading-none">
           <span
-            className={`${nameClass} font-serif-luxury font-bold text-[#24432B] whitespace-nowrap`}
+            className={`${nameClass} font-serif-luxury font-bold text-[#6c7427] whitespace-nowrap`}
           >
             Flores da Pipol
           </span>
           <span
-            className={`${taglineClass} mt-1 font-semibold uppercase text-[#B08A43] whitespace-nowrap`}
+            className={`${taglineClass} mt-1 font-semibold uppercase text-[#B07A2A] whitespace-nowrap`}
           >
             Transformações
           </span>

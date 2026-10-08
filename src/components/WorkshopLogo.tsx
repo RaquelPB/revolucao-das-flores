@@ -1,5 +1,5 @@
 import React from 'react';
-import logoWorkshop from '../assets/images/logo_workshop_revolucao.png';
+import logoWorkshop from '../assets/images/logo-workshop.png';
 
 interface WorkshopLogoProps {
   size?: 'sm' | 'md' | 'lg' | 'xl';
