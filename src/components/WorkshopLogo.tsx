@@ -1,5 +1,5 @@
 import React from 'react';
-import logoWorkshop from '../assets/images/logo_workshop_revolucao_1791419367921.jpg';
+import logoWorkshop from '../assets/images/logo_workshop_revolucao.png';
 
 interface WorkshopLogoProps {
   size?: 'sm' | 'md' | 'lg' | 'xl';
@@ -25,7 +25,7 @@ export const WorkshopLogo: React.FC<WorkshopLogoProps> = ({
       <img
         src={logoWorkshop}
         alt="Workshop Revolução das Flores"
-        className={`${sizeClass} max-w-full h-auto object-contain mix-blend-multiply`}
+        className={`${sizeClass} max-w-full h-auto object-contain`}
       />
     </div>
   );
