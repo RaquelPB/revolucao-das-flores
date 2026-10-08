@@ -1,0 +1,106 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-serif: 'Cormorant Garamond', Georgia, serif;
+    --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    --font-script: 'Alex Brush', cursive;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    font-family: var(--font-sans);
+  }
+
+  body {
+    background-color: #FAF7F2;
+    color: #2D2A26;
+  }
+}
+
+.font-serif-luxury {
+  font-family: var(--font-serif);
+}
+
+.font-script-delicate {
+  font-family: var(--font-script);
+}
+
+/* Rose gold and metallic gradients */
+.bg-rose-gold-gradient {
+  background: linear-gradient(135deg, #ECC4B0 0%, #D89886 35%, #B86F5D 70%, #9A5040 100%);
+}
+
+.bg-rose-gold-subtle {
+  background: linear-gradient(135deg, #FDF9F7 0%, #F8EFEA 100%);
+}
+
+.bg-olive-primary {
+  background-color: #6c7427;
+}
+
+.text-rose-gold-gradient {
+  background: linear-gradient(135deg, #ECC4B0 0%, #D89886 35%, #B86F5D 70%, #9A5040 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-gold-gradient {
+  background: linear-gradient(135deg, #E6C887 0%, #CFA559 50%, #9F7934 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Constant Platinum Shimmer Animation for Rose Buttons */
+@keyframes platinumShimmer {
+  0% {
+    transform: translateX(-150%) skewX(-20deg);
+  }
+  45%, 100% {
+    transform: translateX(250%) skewX(-20deg);
+  }
+}
+
+.animate-platinum-shimmer {
+  animation: platinumShimmer 2.6s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+}
+
+.platinum-sheen {
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(255, 255, 255, 0.05) 20%,
+    rgba(255, 255, 255, 0.65) 45%,
+    rgba(240, 248, 255, 0.95) 50%,
+    rgba(255, 255, 255, 0.65) 55%,
+    rgba(255, 255, 255, 0.05) 80%,
+    transparent 100%
+  );
+}
+
+.platinum-glow {
+  box-shadow: 0 4px 20px -2px rgba(184, 111, 93, 0.4), 0 0 12px 1px rgba(255, 240, 235, 0.35);
+}
+
+/* Gentle floating petals */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-8px) rotate(4deg);
+  }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+/* Subtle glow effects */
+.glow-rose {
+  box-shadow: 0 10px 30px -10px rgba(184, 111, 93, 0.25);
+}
+
+.glow-olive {
+  box-shadow: 0 10px 30px -10px rgba(108, 116, 39, 0.25);
+}

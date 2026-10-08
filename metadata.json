@@ -1,0 +1,6 @@
+{
+  "name": "Workshop Revolução das Flores | Flores da Pipol",
+  "description": "Landing page oficial do Workshop Revolução das Flores. Aulas ao vivo em 19 e 20 de Outubro às 19h. Inscreva-se gratuitamente e entre no grupo exclusivo de WhatsApp.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
